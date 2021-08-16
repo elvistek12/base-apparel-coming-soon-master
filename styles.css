@@ -1,6 +1,11 @@
 .contenedor-padre {
   font-size: 16px;
   font-family: "Josefin Sans", sans-serif;
+  background-image: -o-linear-gradient(
+    315deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
   background-image: linear-gradient(
     135deg,
     hsl(0, 0%, 100%),
@@ -18,9 +23,18 @@
 }
 
 .contenedor-informacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
 }
@@ -31,14 +45,25 @@
 
 .contenedor-foto img {
   width: 100%;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: top;
   object-position: top;
 }
 
 .contenedor-datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
@@ -75,17 +100,35 @@
 }
 
 .contenedor-email-boton {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
 }
 
 .contenedor-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
   padding: 20px 35px 80px;
   text-align: left;
@@ -98,6 +141,22 @@
   border: 1px solid hsl(0, 36%, 70%);
   border-radius: 50px;
   width: 100%;
+}
+
+.email::-webkit-input-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.email::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.email:-ms-input-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.email::-ms-input-placeholder {
+  color: hsl(0, 36%, 70%);
 }
 
 .email::placeholder {
@@ -121,20 +180,26 @@
   margin: 20px -32.5px 80px;
   background-color: hsl(0, 80%, 86%);
   background-image: url(images/icon-arrow.svg),
+    -o-linear-gradient(315deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  background-image: url(images/icon-arrow.svg),
     linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
   right: 68px;
   border-radius: 50px;
+  -webkit-box-shadow: 0 15px 30px hsla(0, 36%, 70%, 42.5%);
   box-shadow: 0 15px 30px hsla(0, 36%, 70%, 42.5%);
   cursor: pointer;
   z-index: 20;
+  -webkit-transition: 500ms ease all;
+  -o-transition: 500ms ease all;
   transition: 500ms ease all;
 }
 
 .boton:hover {
   background-image: url(images/icon-arrow.svg);
+  -webkit-box-shadow: 0 15px 30px hsla(0, 36%, 70%, 85%);
   box-shadow: 0 15px 30px hsla(0, 36%, 70%, 85%);
 }
 
@@ -167,7 +232,12 @@
   }
 
   .contenedor-informacion {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
     text-align: left;
     min-height: 520px;
@@ -188,7 +258,11 @@
     width: 60vw;
     min-height: 520px;
     height: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
     align-items: flex-start;
   }
 
@@ -242,6 +316,8 @@
 
   @media (min-height: 720px) {
     .contenedor-datos {
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
     }
   }
