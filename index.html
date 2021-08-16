@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="normalize.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+  </style>
+</head>
+
+<body>
+  <main class="contenedor-padre">
+    <header class="contenedor-logo">
+      <img src="images/logo.svg" alt="Logo" />
+    </header>
+    <section class="contenedor-informacion">
+      <picture class="contenedor-foto">
+        <source media="(min-width: 1024px)" srcset="images/hero-desktop.jpg" />
+        <img src="images/hero-mobile.jpg" alt="Chica" />
+      </picture>
+      <div class="contenedor-datos">
+        <header class="contenedor-logo-escritorio">
+          <img src="images/logo.svg" alt="Logo" />
+        </header>
+        <h1 class="titulo"><span class="span">WE'RE</span> COMING SOON</h1>
+        <article class="contenedor-parrafo">
+          <p class="parrafo">
+            Hello fellow shoppers! We're currently building our new fashion
+            store. Add your email below to stay up-to-date with announcements
+            and our launch deals.
+          </p>
+        </article>
+        <form class="formulario" action="">
+          <div class="contenedor-email-boton">
+            <div class="contenedor-email">
+              <input class="email" type="text" name="email" id="email" placeholder="Email Address" />
+              <img class="error" src="images/icon-error.svg" alt="Error" />
+            </div>
+            <input class="boton" type="submit" value="" />
+          </div>
+          <div class="contenedor-parrafo-error">
+            <p class="parrafo-error">Please provide a valid email</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
