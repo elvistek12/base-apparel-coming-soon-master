@@ -176,7 +176,8 @@
 
 .boton {
   all: unset;
-  padding: 16px 32.5px;
+  height: 50px;
+  width: 65px;
   margin: 20px -32.5px 80px;
   background-color: hsl(0, 80%, 86%);
   background-image: url(images/icon-arrow.svg),
@@ -304,7 +305,7 @@
   }
 
   .boton {
-    padding: 16px 42.5px;
+    width: 85px;
     margin: 25px -42.5px;
     right: 154px;
   }
@@ -314,51 +315,11 @@
     bottom: 10px;
   }
 
-  @media (min-height: 720px) {
+  @media (min-height: 700px) {
     .contenedor-datos {
       -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
       justify-content: space-evenly;
-    }
-  }
-
-  @media (min-height: 820px) {
-    .contenedor-padre {
-      font-size: 26px;
-    }
-
-    .contenedor-logo-escritorio img {
-      height: 48px;
-    }
-
-    .titulo {
-      font-size: 78px;
-      padding: 35px 120px 25px;
-    }
-
-    .contenedor-parrafo {
-      line-height: 30px;
-      padding: 25px 120px;
-    }
-
-    .email {
-      padding: 17.5px;
-    }
-
-    .error {
-      margin: -16px;
-      width: 32px;
-      height: 32px;
-      right: 110px;
-    }
-
-    .boton {
-      padding: 18.5px 50px;
-      margin: 35px -50px;
-    }
-
-    .parrafo-error {
-      font-size: 24px;
     }
   }
 }
@@ -412,7 +373,8 @@
   }
 
   .boton {
-    padding: 18.5px 50px;
+    width: 100px;
+    height: 65px;
     margin: 35px -50px;
   }
 
@@ -420,11 +382,11 @@
     font-size: 24px;
   }
 
-  @media (max-height: 780px) {
+  @media (max-height: 820px) {
     .contenedor-informacion,
     .contenedor-foto,
     .contenedor-datos {
-      min-height: 780px;
+      min-height: 840px;
     }
   }
 }
@@ -458,7 +420,8 @@
   }
 
   .boton {
-    padding: 21px 55px;
+    width: 110px;
+    height: 80px;
     margin: 35px -55px;
   }
 
@@ -496,7 +459,8 @@
   }
 
   .boton {
-    padding: 23.5px 60px;
+    width: 120px;
+    height: 90px;
     margin: 35px -60px;
   }
 
@@ -508,7 +472,7 @@
     .contenedor-informacion,
     .contenedor-foto,
     .contenedor-datos {
-      min-height: 875px;
+      min-height: 940px;
     }
   }
 }
