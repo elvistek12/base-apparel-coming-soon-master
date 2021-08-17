@@ -27,5 +27,10 @@ formulario.addEventListener("submit", (e) => {
 
   if (campoCorreo) {
     formulario.reset();
+  } else {
+    document.querySelector(".email").classList.add("email-error");
+    document.querySelector(".error").classList.add("error-activo");
+    document.querySelector(".contenedor-parrafo-error").classList.add("contenedor-parrafo-error-activo");
+    campoCorreo = false;
   }
 });
